@@ -1,306 +1,167 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/dealmap.feature");
 formatter.feature({
   "line": 1,
-  "name": "CRM Login Feature",
+  "name": "Deal data map creation",
   "description": "",
-  "id": "crm-login-feature",
+  "id": "deal-data-map-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 4,
-      "value": "# Without Examples keyword"
-    },
-    {
-      "line": 6,
-      "value": "#Scenario: CRM Login Scenario"
-    },
-    {
-      "line": 7,
-      "value": "#Given user is already on Login Page"
-    },
-    {
-      "line": 8,
-      "value": "#When title of Login Page is CRM"
-    },
-    {
-      "line": 9,
-      "value": "#Then user enters \"Sergii\" and \"Test123\""
-    },
-    {
-      "line": 10,
-      "value": "#Then user clicks on Login button"
-    },
-    {
-      "line": 11,
-      "value": "#Then user is on Home Page"
-    },
-    {
-      "line": 12,
-      "value": "#Then close the browser"
-    },
-    {
-      "line": 14,
-      "value": "# With Examples keyword"
-    }
-  ],
-  "line": 15,
-  "name": "CRM Login Scenario",
+formatter.scenario({
+  "line": 3,
+  "name": "Free CRM Create a new contact scenario",
   "description": "",
-  "id": "crm-login-feature;crm-login-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-map-creation;free-crm-create-a-new-contact-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
+  "line": 5,
   "name": "user is already on Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 17,
+  "line": 6,
   "name": "title of Login Page is CRM",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user is on Home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 23,
-  "name": "",
-  "description": "",
-  "id": "crm-login-feature;crm-login-scenario;",
+  "line": 7,
+  "name": "user enters username and password",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 24,
-      "id": "crm-login-feature;crm-login-scenario;;1"
+      "line": 8
     },
     {
       "cells": [
         "Sergii",
         "Test123"
       ],
-      "line": 25,
-      "id": "crm-login-feature;crm-login-scenario;;2"
+      "line": 9
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user clicks on Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user is on Home Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "user enters deal details",
+  "rows": [
+    {
+      "cells": [
+        "title",
+        "amount",
+        "probability",
+        "commision"
+      ],
+      "line": 14
     },
     {
       "cells": [
-        "Tom",
-        "test1"
+        "test deal2",
+        "2000",
+        "60",
+        "20"
       ],
-      "line": 26,
-      "id": "crm-login-feature;crm-login-scenario;;3"
+      "line": 15
+    },
+    {
+      "cells": [
+        "test deal3",
+        "3000",
+        "70",
+        "30"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "test deal4",
+        "4000",
+        "80",
+        "40"
+      ],
+      "line": 17
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 25,
-  "name": "CRM Login Scenario",
-  "description": "",
-  "id": "crm-login-feature;crm-login-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "title of Login Page is CRM",
-  "keyword": "When "
+  "keyword": "Then "
 });
 formatter.step({
   "line": 18,
-  "name": "user enters \"Sergii\" and \"Test123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user is on Home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_already_on_login_page()"
+  "location": "DealStepWithMap.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 6365761611,
+  "duration": 7007934467,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_Login_Page_is_CRM()"
+  "location": "DealStepWithMap.title_of_Login_Page_is_CRM()"
 });
 formatter.result({
-  "duration": 20466870,
+  "duration": 59285893,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Sergii",
-      "offset": 13
-    },
-    {
-      "val": "Test123",
-      "offset": 26
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+  "location": "DealStepWithMap.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 504000222,
+  "duration": 498210774,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealStepWithMap.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 4106480214,
+  "duration": 5787763863,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_Home_Page()"
+  "location": "DealStepWithMap.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 22559595,
+  "duration": 186023314,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
+  "location": "DealStepWithMap.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "duration": 674310505,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "CRM Login Scenario",
-  "description": "",
-  "id": "crm-login-feature;crm-login-scenario;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "title of Login Page is CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "user enters \"Tom\" and \"test1\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user is on Home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_already_on_login_page()"
-});
-formatter.result({
-  "duration": 4904205292,
+  "duration": 352367096,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_Login_Page_is_CRM()"
+  "location": "DealStepWithMap.user_enter_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 17498837,
+  "duration": 4455597282,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Tom",
-      "offset": 13
-    },
-    {
-      "val": "test1",
-      "offset": 23
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+  "location": "DealStepWithMap.close_the_browser()"
 });
 formatter.result({
-  "duration": 520486419,
+  "duration": 1153379834,
   "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 926538607,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_on_Home_Page()"
-});
-formatter.result({
-  "duration": 49571974,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cCRMPRO[]\u003e but was:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinitions.LoginStepDefinition.user_is_on_Home_Page(LoginStepDefinition.java:60)\r\n\tat ✽.Then user is on Home Page(./src/main/java/Features/login.feature:20)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });
