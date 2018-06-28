@@ -1,167 +1,199 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/dealmap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/taggedhooks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deal data map creation",
+  "name": "Free CRM App Test",
   "description": "",
-  "id": "deal-data-map-creation",
+  "id": "free-crm-app-test",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 487749,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 265867,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Create a new contact scenario",
+  "line": 4,
+  "name": "free crm create dealtest",
   "description": "",
-  "id": "deal-data-map-creation;free-crm-create-a-new-contact-scenario",
+  "id": "free-crm-app-test;free-crm-create-dealtest",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@First"
+    }
+  ]
 });
 formatter.step({
   "line": 5,
-  "name": "user is already on Login Page",
+  "name": "user is on deal page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "title of Login Page is CRM",
+  "name": "user fills the deals form",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user enters username and password",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "Sergii",
-        "Test123"
-      ],
-      "line": 9
-    }
-  ],
+  "name": "deal is created",
   "keyword": "Then "
 });
-formatter.step({
+formatter.match({
+  "location": "TaggHooksStepDefinition.user_is_on_deal_page()"
+});
+formatter.result({
+  "duration": 303288736,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggHooksStepDefinition.user_fills_the_deals_form()"
+});
+formatter.result({
+  "duration": 414440,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggHooksStepDefinition.deal_is_created()"
+});
+formatter.result({
+  "duration": 631923,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 383161,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 397334,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 759969,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 581584,
+  "status": "passed"
+});
+formatter.scenario({
   "line": 10,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
+  "name": "Free crm create contact",
+  "description": "",
+  "id": "free-crm-app-test;free-crm-create-contact",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@Second"
+    }
+  ]
 });
 formatter.step({
   "line": 11,
-  "name": "user is on Home Page",
-  "keyword": "Then "
+  "name": "user is present on contact page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 12,
-  "name": "user moves to new deal page",
-  "keyword": "Then "
+  "name": "user fills the contact form",
+  "keyword": "When "
 });
 formatter.step({
   "line": 13,
-  "name": "user enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commision"
-      ],
-      "line": 14
-    },
-    {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 16
-    },
-    {
-      "cells": [
-        "test deal4",
-        "4000",
-        "80",
-        "40"
-      ],
-      "line": 17
-    }
-  ],
+  "name": "contact is created",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "TaggHooksStepDefinition.user_is_present_on_contact_page()"
+});
+formatter.result({
+  "duration": 156393,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggHooksStepDefinition.user_fills_the_contact_form()"
+});
+formatter.result({
+  "duration": 347972,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggHooksStepDefinition.contact_is_created()"
+});
+formatter.result({
+  "duration": 376808,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 394402,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 199889,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 616283,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "Free crm create mail test",
+  "description": "",
+  "id": "free-crm-app-test;free-crm-create-mail-test",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 15,
+      "name": "@Third"
+    }
+  ]
+});
+formatter.step({
+  "line": 17,
+  "name": "user is on mail page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "close the browser",
+  "name": "user fills the mail form",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "mail is created",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepWithMap.user_already_on_login_page()"
+  "location": "TaggHooksStepDefinition.user_is_on_mail_page()"
 });
 formatter.result({
-  "duration": 7007934467,
+  "duration": 365567,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepWithMap.title_of_Login_Page_is_CRM()"
+  "location": "TaggHooksStepDefinition.user_fills_the_mail_form()"
 });
 formatter.result({
-  "duration": 59285893,
+  "duration": 699855,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepWithMap.user_enters_username_and_password(DataTable)"
+  "location": "TaggHooksStepDefinition.mail_is_created()"
 });
 formatter.result({
-  "duration": 498210774,
+  "duration": 366056,
   "status": "passed"
 });
-formatter.match({
-  "location": "DealStepWithMap.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 5787763863,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealStepWithMap.user_is_on_Home_Page()"
-});
-formatter.result({
-  "duration": 186023314,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealStepWithMap.user_moves_to_new_deal_page()"
-});
-formatter.result({
-  "duration": 352367096,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealStepWithMap.user_enter_deal_details(DataTable)"
-});
-formatter.result({
-  "duration": 4455597282,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealStepWithMap.close_the_browser()"
-});
-formatter.result({
-  "duration": 1153379834,
+formatter.after({
+  "duration": 2865401,
   "status": "passed"
 });
 });

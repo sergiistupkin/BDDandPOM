@@ -3,170 +3,268 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM Create a new contact scenario",
+        "before": [
+          {
+            "result": {
+              "duration": 487749,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.setUpFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 265867,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "free crm create dealtest",
         "description": "",
-        "id": "deal-data-map-creation;free-crm-create-a-new-contact-scenario",
+        "id": "free-crm-app-test;free-crm-create-dealtest",
+        "after": [
+          {
+            "result": {
+              "duration": 383161,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.tearDownFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 397334,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7007934467,
+              "duration": 303288736,
               "status": "passed"
             },
             "line": 5,
-            "name": "user is already on Login Page",
+            "name": "user is on deal page",
             "match": {
-              "location": "DealStepWithMap.user_already_on_login_page()"
+              "location": "TaggHooksStepDefinition.user_is_on_deal_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 59285893,
+              "duration": 414440,
               "status": "passed"
             },
             "line": 6,
-            "name": "title of Login Page is CRM",
+            "name": "user fills the deals form",
             "match": {
-              "location": "DealStepWithMap.title_of_Login_Page_is_CRM()"
+              "location": "TaggHooksStepDefinition.user_fills_the_deals_form()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 498210774,
+              "duration": 631923,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters username and password",
+            "name": "deal is created",
             "match": {
-              "location": "DealStepWithMap.user_enters_username_and_password(DataTable)"
+              "location": "TaggHooksStepDefinition.deal_is_created()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "Sergii",
-                  "Test123"
-                ],
-                "line": 9
-              }
-            ],
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 5787763863,
+              "duration": 759969,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user clicks on Login button",
             "match": {
-              "location": "DealStepWithMap.user_clicks_on_Login_button()"
-            },
-            "keyword": "Then "
+              "location": "TaggHooksStepDefinition.setUp()"
+            }
           },
           {
             "result": {
-              "duration": 186023314,
+              "duration": 581584,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.setUpSecond()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Free crm create contact",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-contact",
+        "after": [
+          {
+            "result": {
+              "duration": 394402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 199889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.tearDownSecond()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 156393,
               "status": "passed"
             },
             "line": 11,
-            "name": "user is on Home Page",
+            "name": "user is present on contact page",
             "match": {
-              "location": "DealStepWithMap.user_is_on_Home_Page()"
+              "location": "TaggHooksStepDefinition.user_is_present_on_contact_page()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 352367096,
+              "duration": 347972,
               "status": "passed"
             },
             "line": 12,
-            "name": "user moves to new deal page",
+            "name": "user fills the contact form",
             "match": {
-              "location": "DealStepWithMap.user_moves_to_new_deal_page()"
+              "location": "TaggHooksStepDefinition.user_fills_the_contact_form()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 4455597282,
+              "duration": 376808,
               "status": "passed"
             },
             "line": 13,
-            "name": "user enters deal details",
+            "name": "contact is created",
             "match": {
-              "location": "DealStepWithMap.user_enter_deal_details(DataTable)"
+              "location": "TaggHooksStepDefinition.contact_is_created()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commision"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "test deal2",
-                  "2000",
-                  "60",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "test deal3",
-                  "3000",
-                  "70",
-                  "30"
-                ],
-                "line": 16
-              },
-              {
-                "cells": [
-                  "test deal4",
-                  "4000",
-                  "80",
-                  "40"
-                ],
-                "line": 17
-              }
-            ],
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Second"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 616283,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Free crm create mail test",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-mail-test",
+        "after": [
+          {
+            "result": {
+              "duration": 2865401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggHooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 365567,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on mail page",
+            "match": {
+              "location": "TaggHooksStepDefinition.user_is_on_mail_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1153379834,
+              "duration": 699855,
               "status": "passed"
             },
             "line": 18,
-            "name": "close the browser",
+            "name": "user fills the mail form",
             "match": {
-              "location": "DealStepWithMap.close_the_browser()"
+              "location": "TaggHooksStepDefinition.user_fills_the_mail_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 366056,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "mail is created",
+            "match": {
+              "location": "TaggHooksStepDefinition.mail_is_created()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "Deal data map creation",
+    "name": "Free CRM App Test",
     "description": "",
-    "id": "deal-data-map-creation",
+    "id": "free-crm-app-test",
     "keyword": "Feature",
-    "uri": "./src/main/java/Features/dealmap.feature"
+    "uri": "./src/main/java/Features/taggedhooks.feature"
   }
 ]

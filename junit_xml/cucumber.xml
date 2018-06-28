@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.500563">
-<testcase classname="Deal data map creation" name="Free CRM Create a new contact scenario" time="19.500563">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of Login Page is CRM.............................................passed
-Then user enters username and password......................................passed
-Then user clicks on Login button............................................passed
-Then user is on Home Page...................................................passed
-Then user moves to new deal page............................................passed
-Then user enters deal details...............................................passed
-Then close the browser......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.313599">
+<testcase classname="Free CRM App Test" name="free crm create dealtest" time="0.305869">
+<system-out><![CDATA[Given user is on deal page..................................................passed
+When user fills the deals form..............................................passed
+Then deal is created........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM App Test" name="Free crm create contact" time="0.002817">
+<system-out><![CDATA[Given user is present on contact page.......................................passed
+When user fills the contact form............................................passed
+Then contact is created.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM App Test" name="Free crm create mail test" time="0.004913">
+<system-out><![CDATA[Given user is on mail page..................................................passed
+When user fills the mail form...............................................passed
+Then mail is created........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
