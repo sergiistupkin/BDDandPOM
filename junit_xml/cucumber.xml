@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.313599">
-<testcase classname="Free CRM App Test" name="free crm create dealtest" time="0.305869">
-<system-out><![CDATA[Given user is on deal page..................................................passed
-When user fills the deals form..............................................passed
-Then deal is created........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM App Test" name="Free crm create contact" time="0.002817">
-<system-out><![CDATA[Given user is present on contact page.......................................passed
-When user fills the contact form............................................passed
-Then contact is created.....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM App Test" name="Free crm create mail test" time="0.004913">
-<system-out><![CDATA[Given user is on mail page..................................................passed
-When user fills the mail form...............................................passed
-Then mail is created........................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.387529">
+<testcase classname="Free CRM App Test" name="Validate HomePage" time="8.387529">
+<system-out><![CDATA[Given user opens browser....................................................passed
+Then user on LoginPage......................................................passed
+Then user enters login and password.........................................passed
+Then user click login button................................................passed
+Then homepage is displayed..................................................passed
+Then validate HomePage title................................................passed
+Then validate logged in username............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

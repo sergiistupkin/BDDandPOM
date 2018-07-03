@@ -3,260 +3,96 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 487749,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.setUpFirst()"
-            }
-          },
-          {
-            "result": {
-              "duration": 265867,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.setUp()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "free crm create dealtest",
+        "line": 3,
+        "name": "Validate HomePage",
         "description": "",
-        "id": "free-crm-app-test;free-crm-create-dealtest",
-        "after": [
-          {
-            "result": {
-              "duration": 383161,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.tearDownFirst()"
-            }
-          },
-          {
-            "result": {
-              "duration": 397334,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.tearDown()"
-            }
-          }
-        ],
+        "id": "free-crm-app-test;validate-homepage",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 303288736,
+              "duration": 8387176121,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49850,
               "status": "passed"
             },
             "line": 5,
-            "name": "user is on deal page",
+            "name": "user on LoginPage",
             "match": {
-              "location": "TaggHooksStepDefinition.user_is_on_deal_page()"
+              "location": "HomePageSteps.user_on_LoginPage()"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 414440,
+              "duration": 52782,
               "status": "passed"
             },
             "line": 6,
-            "name": "user fills the deals form",
+            "name": "user enters login and password",
             "match": {
-              "location": "TaggHooksStepDefinition.user_fills_the_deals_form()"
+              "location": "HomePageSteps.user_enters_login_and_password()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 631923,
+              "duration": 107520,
               "status": "passed"
             },
             "line": 7,
-            "name": "deal is created",
+            "name": "user click login button",
             "match": {
-              "location": "TaggHooksStepDefinition.deal_is_created()"
+              "location": "HomePageSteps.user_click_login_button()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@First"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 759969,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.setUp()"
-            }
           },
           {
             "result": {
-              "duration": 581584,
+              "duration": 45452,
               "status": "passed"
             },
+            "line": 8,
+            "name": "homepage is displayed",
             "match": {
-              "location": "TaggHooksStepDefinition.setUpSecond()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Free crm create contact",
-        "description": "",
-        "id": "free-crm-app-test;free-crm-create-contact",
-        "after": [
-          {
-            "result": {
-              "duration": 394402,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 199889,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.tearDownSecond()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 156393,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is present on contact page",
-            "match": {
-              "location": "TaggHooksStepDefinition.user_is_present_on_contact_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 347972,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user fills the contact form",
-            "match": {
-              "location": "TaggHooksStepDefinition.user_fills_the_contact_form()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 376808,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "contact is created",
-            "match": {
-              "location": "TaggHooksStepDefinition.contact_is_created()"
+              "location": "HomePageSteps.homepage_is_displayed()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
+            "result": {
+              "duration": 41541,
+              "status": "passed"
+            },
             "line": 9,
-            "name": "@Second"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 616283,
-              "status": "passed"
-            },
+            "name": "validate HomePage title",
             "match": {
-              "location": "TaggHooksStepDefinition.setUp()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Free crm create mail test",
-        "description": "",
-        "id": "free-crm-app-test;free-crm-create-mail-test",
-        "after": [
-          {
-            "result": {
-              "duration": 2865401,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggHooksStepDefinition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 365567,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user is on mail page",
-            "match": {
-              "location": "TaggHooksStepDefinition.user_is_on_mail_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 699855,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user fills the mail form",
-            "match": {
-              "location": "TaggHooksStepDefinition.user_fills_the_mail_form()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 366056,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "mail is created",
-            "match": {
-              "location": "TaggHooksStepDefinition.mail_is_created()"
+              "location": "HomePageSteps.validate_HomePage_title()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 15,
-            "name": "@Third"
+            "result": {
+              "duration": 55715,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate logged in username",
+            "match": {
+              "location": "HomePageSteps.validate_logged_in_username()"
+            },
+            "keyword": "Then "
           }
         ]
       }
@@ -265,6 +101,6 @@
     "description": "",
     "id": "free-crm-app-test",
     "keyword": "Feature",
-    "uri": "./src/main/java/Features/taggedhooks.feature"
+    "uri": "./src/main/java/com/qa/features/crm.feature"
   }
 ]
