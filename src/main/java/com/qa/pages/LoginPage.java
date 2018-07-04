@@ -23,7 +23,12 @@ public class LoginPage extends TestBase{
 	//actions
 	public String validateLoginPage() {
 		return driver.getTitle();
-	
+	}
+	public HomePage enterLoginAndPassword(String un, String pwd) {
+		username.sendKeys(un);
+		password.sendKeys(pwd);
+		loginBtn.click();
+		return new HomePage();
 	}
 	
 	

@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8387176121,
+              "duration": 6710739169,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 49850,
+              "duration": 124348040,
               "status": "passed"
             },
             "line": 5,
@@ -36,11 +36,11 @@
           },
           {
             "result": {
-              "duration": 52782,
+              "duration": 6342111179,
               "status": "passed"
             },
             "line": 6,
-            "name": "user enters login and password",
+            "name": "user enters login and password and click login button",
             "match": {
               "location": "HomePageSteps.user_enters_login_and_password()"
             },
@@ -48,22 +48,10 @@
           },
           {
             "result": {
-              "duration": 107520,
+              "duration": 394604758,
               "status": "passed"
             },
             "line": 7,
-            "name": "user click login button",
-            "match": {
-              "location": "HomePageSteps.user_click_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 45452,
-              "status": "passed"
-            },
-            "line": 8,
             "name": "homepage is displayed",
             "match": {
               "location": "HomePageSteps.homepage_is_displayed()"
@@ -72,10 +60,10 @@
           },
           {
             "result": {
-              "duration": 41541,
+              "duration": 11549086,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "validate HomePage title",
             "match": {
               "location": "HomePageSteps.validate_HomePage_title()"
@@ -84,10 +72,10 @@
           },
           {
             "result": {
-              "duration": 55715,
+              "duration": 441931035,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "validate logged in username",
             "match": {
               "location": "HomePageSteps.validate_logged_in_username()"
